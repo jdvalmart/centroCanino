@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#cuerpo{
+    width: 100%;
+    margin: 15px auto;
+    text-align: left;
+}
+
+h1{
+    font-size: 50px;
+    font: ;
+}
+h2{
+    font-size: 20px;
+}
+
+#encabezado{
+    background-image: url(src/fondo.png);
+    width: auto;
+    height:auto;
+    border-radius: 10px;
+    text-align: center;
+    
+
+}
+#encabezado img {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    padding-right: 90px;
+   
+}
+
+
