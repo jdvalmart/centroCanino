@@ -20,21 +20,29 @@ h2{
 }
 
 #encabezado{
+    display: flex;
+    flex-direction:row;
     background-image: url(src/fondo.png);
-    width: auto;
+    width: 960px;
+    border: 1px solid gray;
     height:auto;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     color:#708090;
-
+    
 
 }
-#encabezado img {
-    float: right;
-    width: 200px;
-    height: 200px;
+.logo {
+    order: 1;
+    width: 160px;
+    height:160px; 
    
     
+}
+#menu{
+    background: #708090;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .nav-enlace{
@@ -50,13 +58,14 @@ h2{
 .nav-enlace:hover{
     background:#C0C0C0;
 }
-#menu{
-    background: #708090;
-    padding: 20px;
+
+
+.prueba{
+    display: flex;
 }
 
 #seccion{
-    float: left;
+    display:block;
     width: 660px;
     margin: 20px;
 }
@@ -80,13 +89,32 @@ h2{
 
 
 #lateral{
+    display: flex;
     background: gray;
-    float: left;
     width:220px;
-    padding: 20px;
     margin: 20px 0px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+#lateral h3 {
+    background: black;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+}
 
-
+#lateral label {
+    background: blue;
+    align-content: flex-start;
+    margin: 2px;
+    width: 100px;
+}
+#lateral input {
+    background: yellow;
+    align-content: flex-end;
+    margin: 2px;
+    width: 100px;
 }
 #pie{
     display: inline-block;

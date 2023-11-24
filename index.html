@@ -9,7 +9,7 @@
 <body>
     <div id="cuerpo">
         <header id="encabezado">
-            <img src="src/logo.png" alt="logo">
+            <img src="src/logo.png" alt="logo" class="logo">
             <h2>CENTRO VETERNARIO</h2>
             <h1>Caninos y Felinos</h1>
            
@@ -20,6 +20,7 @@
                 <a href="#"class="nav-enlace">guarderia</a>
                 <a href="#"class="nav-enlace">Promociones</a>  
         </nav>
+        <div class="prueba">
         <section id="seccion">
             <article class="articulo">
                 <h3>Cuidados y educacion para su perro</h3>
@@ -36,23 +37,24 @@
         </section>
         <aside id="lateral">
             <form action="formulario" name="formulario">
-                <h3>Solicitar cita medica</h3>
-                <label for="txtMascota">Mascota:</label>
+                <h3 id="menucito">Solicitar cita medica</h3>
+                <label id="label" for="txtMascota">Mascota:</label>
                 <input type="text" name="txtMascota" required><br>
-                <label for="txtEdad">Edad:</label>
+                <label id="label" for="txtEdad">Edad:</label>
                 <input type="number" name="txtEdad" > <br>
-                <label for="txtRaza">Raza:</label>
-                <input type="text" name="txtRaza" > <br>
-                <label for="txtDate">Fecha:</label>
+                <label id="label" for="txtRaza">Raza:</label>
+                <input  type="text" name="txtRaza" > <br>
+                <label id="label" for="txtDate">Fecha:</label>
                 <input type="date" name="txtDate"  required}> <br>
-                <label for="txttime">Hora:</label>
+                <label id="label" for="txttime">Hora:</label>
                 <input type="time" name="txtTime" required> <br>
-                <label for="txtNombre">Amo:</label>
+                <label id="label" for="txtNombre">Amo:</label>
                 <input type="text" name="txtNombre"> <br>
                 <input type="submit" name="btnEnviar" value="Validar cita" required> 
 
             </form>
         </aside>
+        </div>
         <footer id="pie">
             <h4>contátenos</h4>
             <p><strong>linea gratuita:</strong> 018000-00001</p>
