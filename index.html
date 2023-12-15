@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ees">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,48 +11,53 @@
         <header id="encabezado">
             <img src="src/logo.png" alt="logo" class="logo">
             <h2>CENTRO VETERNARIO</h2>
-            <h1>Caninos y Felinos</h1>
+            <h1 id="titulo">Caninos y Felinos</h1>
            
         </header>
         <nav id="menu">
                 <a href="#" class="nav-enlace">servicios</a>
-                <a href="#"class="nav-enlace">productos</a>
-                <a href="#"class="nav-enlace">guarderia</a>
-                <a href="#"class="nav-enlace">Promociones</a>  
+                <a href="#" class="nav-enlace">productos</a>
+                <a href="#" class="nav-enlace">guarderia</a>
+                <a href="#" class="nav-enlace">Promociones</a>  
         </nav>
         <div class="prueba">
-        <section id="seccion">
-            <article class="articulo">
+            <section id="seccion">
+                <article class="articulo">
                 <h3>Cuidados y educacion para su perro</h3>
                 <img src="src/can1.png" alt="can1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem porro nulla, fuga nisi dolores dignissimos alias laboriosam debitis distinctio! Sed, ducimus velit laudantium repellendus est doloremque! Repudiandae, est maiores.</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem porro nulla, fuga nisi dolores dignissimos alias laboriosam debitis distinctio! Sed, ducimus velit laudantium repellendus est doloremque! Repudiandae, est maiores.</p>
                 <p>ver mas...</p>
-            </article>
-            <article class="articulo">
+             </article>
+             <article class="articulo">
                 <h3>Salir de viaje con su mascota</h3>
                 <img src="src/can2.png" alt="can2">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem porro nulla, fuga nisi dolores dignissimos alias laboriosam debitis distinctio! Sed, ducimus velit laudantium repellendus est doloremque! Repudiandae, est maiores.</p>
                 <p>ver mas...</p>
-            </article>
-        </section>
-        <aside id="lateral">
-            <form action="formulario" name="formulario">
-                <h3 id="menucito">Solicitar cita medica</h3>
-                <label id="label" for="txtMascota">Mascota:</label>
-                <input type="text" name="txtMascota" required><br>
-                <label id="label" for="txtEdad">Edad:</label>
-                <input type="number" name="txtEdad" > <br>
-                <label id="label" for="txtRaza">Raza:</label>
-                <input  type="text" name="txtRaza" > <br>
-                <label id="label" for="txtDate">Fecha:</label>
-                <input type="date" name="txtDate"  required}> <br>
-                <label id="label" for="txttime">Hora:</label>
-                <input type="time" name="txtTime" required> <br>
-                <label id="label" for="txtNombre">Amo:</label>
-                <input type="text" name="txtNombre"> <br>
-                <input type="submit" name="btnEnviar" value="Validar cita" required> 
+             </article>
+            </section>
+            <aside >
+                <form action="formulario" name="formulario">
+                    <div id="lateral">
+                        <h3 id="menucito">Solicitar cita medica</h3>
+                        <label id="label" for="txtMascota">Mascota:</label>
+                        <input type="text" name="txtMascota" required><br>
+                        <label id="label" for="txtEdad">Edad:</label>
+                        <input type="number" name="txtEdad" > <br>
+                        <label id="label" for="txtRaza">Raza:</label>
+                        <input  type="text" name="txtRaza" > <br>
+                        <label id="label" for="txtDate">Fecha:</label>
+                        <input type="date" name="txtDate"  required> <br>
+                        <label id="label" for="txttime">Hora:</label>
+                        <input type="time" name="txtTime" required> <br>
+                        <label id="label" for="txtNombre">Amo:</label>
+                        <input type="text" name="txtNombre"> <br>
+                    </div>
+                    <div id="boton">
+                        <input type="submit" class="btn" name="btnEnviar" value="Validar cita" required> 
+                    </div>
+                </form>
+                
 
-            </form>
         </aside>
         </div>
         <footer id="pie">

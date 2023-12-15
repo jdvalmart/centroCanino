@@ -10,7 +10,7 @@
 }
 
 h1{
-    font-size: 65px;
+    font-size: 60px;
     font-family:cursive
    
 }
@@ -20,6 +20,7 @@ h2{
 }
 
 #encabezado{
+    position: relative;
     display: flex;
     flex-direction:row;
     background-image: url(src/fondo.png);
@@ -29,17 +30,38 @@ h2{
     border-radius: 20px;
     text-align: center;
     color:#708090;
+   
+.logo + h2 {
+    position: absolute;
+    left: 20px;
+    top: 30px; 
+   
     
+}
+#titulo{
+    position: relative;
+    top: 30px;
+    left: 80px;
+    margin: 20px;
+    height: auto;
+    padding: 20px;
+
+}
+
 
 }
 .logo {
-    order: 1;
-    width: 160px;
-    height:160px; 
+    position:absolute;
+    right: 10%;
+    bottom: 2px;
+    width: 20%;
+    height: auto;    
    
     
 }
 #menu{
+    display: flex;
+    justify-content: space-around;
     background: #708090;
     padding: 20px;
     border-radius: 20px;
@@ -89,33 +111,87 @@ h2{
 
 
 #lateral{
-    display: flex;
+    position: relative;
     background: gray;
-    width:220px;
-    margin: 20px 0px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 20px 20px;
+    width:300px;
+    height: 330px;
+    margin: 20px 0 40px 5px;
+    border: 1px solid black;
     color: white;
+    
 }
 #lateral h3 {
     background: black;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
     text-align: center;
     height: 30px;
-    padding: 5px;
+    padding: 10px;
+    font-size: 25px;
+
 }
 
-#lateral label {
-    background: blue;
-    align-content: flex-start;
-    margin: 2px;
-    width: 100px;
+
+#lateral label{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 12px;
+    width: 50px;
+    margin-bottom: 7px;
+    padding: 5px;
+   
+   
 }
 #lateral input {
-    background: yellow;
-    align-content: flex-end;
-    margin: 2px;
-    width: 100px;
+    position: relative;   
+    left: 20px;
+    top: 20px;
+    font-size: 12px;
+    width: 150px;
+    margin-bottom: 7px;
+    padding: 5px;
+    border-radius: 8px;  
 }
+#lateral input:focus {
+    background-color: papayawhip;
+}
+#lateral label{
+    position: relative;
+    display: inline-block;
+    left: 20px;
+    font-size: 16px;
+}
+#lateral input{
+    position: relative;
+    left: 40px;
+    
+}
+#boton{
+    position: absolute;
+    bottom: 1px;
+    right: 300px;
+    
+}
+.btn{
+    position: relative;
+    top: 5px;
+    background-color: papayawhip;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;  
+}
+
+.btn:hover{
+    background-color:white;
+}
+.btn:active{
+    background-color: goldenrod;
+}
+
+
 #pie{
     display: inline-block;
     background:  #708090;
@@ -124,5 +200,6 @@ h2{
     text-align: center;
     padding: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
 }
 
